@@ -2,10 +2,10 @@
 Roman to Integer:
 Convert Roman Number to Integer in Java
 */
-import java.util.HashMap;
+import java.util.Hashtable;
 class RomanToInteger {
     public static int romanToInt(String s) {
-        HashMap<Character,Integer> ht = new HashMap<>();
+        Hashtable<Character,Integer> ht = new Hashtable<>();
         ht.put('M',1000);
         ht.put('D',500);
         ht.put('C',100);
@@ -31,6 +31,10 @@ class RomanToInteger {
     }
     public static void main(String args[]){
         romanToInt("XL");
+        romanToInt("MCMIV");
+        romanToInt("VII");
+        romanToInt("III");
+        
     }
 
 }
